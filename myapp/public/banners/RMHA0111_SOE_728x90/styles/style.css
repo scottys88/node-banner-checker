@@ -1,0 +1,96 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+#ad {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 728px;
+	height: 90px;
+}
+#banner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	cursor:pointer;
+	visibility:hidden;
+}
+
+#clickthrough-button {
+  background-color: rgba(255,255,255,0);
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+
+#border {
+	/*border: rgb(145, 153, 153) 1px solid;*/
+	position: absolute;
+	width: 726px;
+	height: 88px;
+	top: 0;
+	left: 0;
+}
+
+#border2 {
+	/*border: rgba(255, 255, 255, 0.2) 5px solid;*/
+	position: absolute;
+	width: 718px;
+	height: 80px;
+	top: 0;
+	left: 0;
+}
+
+/* applies to GIF and PNG images; avoids blurry edges */
+img[src$=".gif"], img[src$=".png"] {
+	image-rendering: -moz-crisp-edges;         /* Firefox */
+	image-rendering:   -o-crisp-edges;         /* Opera */
+	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+img { position:absolute; }
+#bg { bottom: 0px; right: 0px; }
+#mask {top: 0px; left: 0px;}
+#txt_01 { top: 0px; left: 0px; }
+#txt_02 { top: 0px; left: 0px; }
+#blue { top: 0px; left: 0px; }
+
+#tcs {
+	color: #fff;
+	font-size: 9px;
+	font-family: arial, helvetica, sans-serif;
+	position: absolute;
+    text-align: center;
+    bottom: 9px;
+	left: 232px;
+}
+#btn {
+	top: 0;
+	left: 0;
+	background-image:url('../images/btn.png');
+	background-position: center top;
+	width: 728px;
+	height: 90px;
+	z-index: 5;
+	position: absolute;
+}
+
+/*#btn:hover {
+	background-position: center bottom;
+}*/
