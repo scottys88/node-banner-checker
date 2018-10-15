@@ -7,5 +7,21 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    
+    
+      <% bannerArray.forEach(banner => { %>
+      
+      <div class="banner">
+        <h2><a href="<%= banner.zip %>"><%= banner.zip %></a></h2>
+        <img src="<%= banner.image %>" />
+        <iframe width="<%= banner.size[0] %>" frameborder="0" height="<%= banner.size[1] %>" src="<%= banner.path %>"></iframe>
+        <h3>Click through URL</h3>
+        <p><a href="<%= banner.url %>"><%= banner.url %></a></p>
+
+      </div>
+      
+      <% }) %>
+      
+    
   </body>
 </html>
